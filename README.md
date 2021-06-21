@@ -1,7 +1,8 @@
 # cribApp
 An implementation of a new landing page for cribMd
 
-#Setup
+##Setup
+
 1.Clone the project.
 
 2.Run npm install or yarn add to install all dependencies.
