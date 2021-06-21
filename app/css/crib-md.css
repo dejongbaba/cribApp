@@ -1,6 +1,6 @@
 /*fonts */
-@import url("http://fonts.cdnfonts.com/css/tiempos-headline");
-@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("https://fonts.cdnfonts.com/css/tiempos-headline");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 :root {
   --spacing: 10px;
   --absolute: absolute;
@@ -25,7 +25,7 @@
   --secondary: #f8a362;
   --secondary-light: rgba(248, 163, 98, 0.2);
   --black: #101118;
-  --gray: #bebebe;
+  --gray: #515151;
   --white: white;
   --button-radius: 0 1rem 1rem 1rem;
   --font-bold-family: "Gilroy-Bold", sans-serif;
@@ -436,16 +436,30 @@ hr {
   padding-top: 3rem;
   padding-bottom: 3rem; }
   .testimonial-header {
-    font-size: var(--two-rem);
+    font-size: var(--three-rem);
     font-family: var(--heading-font);
     line-height: var(--line-height);
     width: 80%;
     margin: 0 auto 4rem; }
+  .testimonial .owl-nav {
+    top: -10%;
+    right: 0;
+    position: absolute; }
+    .testimonial .owl-nav span {
+      font-size: 2rem; }
+  .testimonial .owl-carousel .owl-nav button.owl-prev, .testimonial .owl-carousel .owl-nav button.owl-next {
+    background-color: var(--secondary);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 2rem; }
   .testimonial-item {
     background-color: var(--white);
     width: 300px;
-    height: auto;
+    height: 250px;
     padding: 3rem;
+    margin: 5rem auto;
     box-shadow: var(--box-shadow);
     position: var(--relative);
     border-bottom-left-radius: 1rem;
@@ -454,8 +468,9 @@ hr {
     position: absolute;
     border-bottom-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    border: 5px solid white;
     top: -20px;
-    width: 50px;
+    width: 50px !important;
     height: auto;
     right: 0; }
   .testimonial-comment {
@@ -467,7 +482,7 @@ hr {
     font-size: var(--one-rem);
     bottom: 10%; }
   .testimonial-carousel {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     width: 80%;
@@ -632,7 +647,7 @@ hr {
 
 /*news cards*/
 .news {
-  padding: 0 10% 20%; }
+  padding: 0 10% 10%; }
   .news > h1 {
     font-family: var(--heading-font);
     font-size: 3rem; }
@@ -645,12 +660,22 @@ hr {
     display: flex;
     justify-content: space-around;
     margin-top: 4rem; }
+    .news-cards .owl-nav button.owl-prev, .news-cards .owl-nav button.owl-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: var(--white);
+      margin: 3rem 1rem; }
+      .news-cards .owl-nav button.owl-prev span, .news-cards .owl-nav button.owl-next span {
+        font-size: 2rem; }
   .news-card {
     width: 350px;
     box-shadow: var(--box-shadow-2);
     background-color: var(--white);
     border-top-right-radius: 2rem;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 1rem 0; }
     .news-card .news-text {
       padding: 2rem; }
     .news-card img {
@@ -679,10 +704,21 @@ hr {
     .footer ul li:first-of-type {
       height: 3rem; }
     .footer ul li {
+      font-weight: 300;
+      font-size: .875rem;
       margin-bottom: 1rem; }
+      .footer ul li address {
+        font-size: .875rem;
+        font-weight: 300; }
+      .footer ul li a {
+        font-weight: 300;
+        font-size: .875rem;
+        color: var(--secondary); }
   .footer-menu {
     display: flex;
     list-style-type: none; }
+    .footer-menu ul {
+      min-width: 115px; }
     .footer-menu i {
       width: 30px;
       height: 30px;
@@ -717,6 +753,8 @@ hr {
       .footer-banner-cta img:first-of-type {
         margin-right: 1rem; }
       .footer-banner-cta img {
+        width: 180px;
+        height: 60px;
         border-radius: 1rem; }
   .footer-contact li:not(:first-of-type) {
     display: flex;
@@ -752,7 +790,7 @@ hr {
   .feature .first-panel .feature-item {
     margin-bottom: 8rem; }
   .feature .second-panel .feature-item {
-    margin-top: 15rem; }
+    margin-top: 30rem; }
   .feature-img {
     width: 100%;
     margin-bottom: 2rem;
