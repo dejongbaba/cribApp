@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10%; }
+  .footer-menu {
+    display: flex; }
+  .footer-menu-about {
+    flex-grow: 1; }
+  .footer-heading {
+    font-family: var(--heading-font);
+    font-size: var(--three-rem); }
+  .footer-description {
+    margin: 5rem;
+    padding: 2rem; }
